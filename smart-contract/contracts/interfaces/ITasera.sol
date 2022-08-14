@@ -1,7 +1,8 @@
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.8.9 <0.9.0;
 pragma experimental ABIEncoderV2;
 
-interface IQuoter {
+interface ITasera {
     function estimateMaxSwapUniswapV3(
         address _fromToken,
         address _toToken,

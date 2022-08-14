@@ -223,7 +223,7 @@ contract UniswapV3Tasera is IUniswapV3Tasera {
         }
     }
 
-    function qouteSwap(
+    function quoteSwap(
         address poolAddress,
         int256 amountSpecified,
         uint160 sqrtPriceLimitX96,
