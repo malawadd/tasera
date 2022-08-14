@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.8.9 <0.9.0;
 pragma experimental ABIEncoderV2;
 
@@ -12,7 +13,7 @@ interface IUniswapV3Tasera {
         // pool fee
         uint24 fee;
         // the pool liquidity
-        uint256 liquidity;
+        uint128 liquidity;
         // whether the pool is unlocked
         bool unlocked;
     }
@@ -50,7 +51,7 @@ interface IUniswapV3Tasera {
         // how much is being swapped out this step
         uint256 amountOut;
         // how much is being paid in
-        uint256 amountPaid;
+        uint256 feeAmount;
     }
 
     struct InitalState {
